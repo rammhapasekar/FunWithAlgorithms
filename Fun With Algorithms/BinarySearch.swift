@@ -10,13 +10,19 @@ import Foundation
 
 class BinarySearch{
 
-    func linearSearch(searchValue: Int, array: [Int]) -> Bool{
+    func linearSearch(searchValue: Int, array: [Int]) -> (Bool,Int){
+        
+        print("\n\nArray For Linear Search \n \(array)\n To search value \(searchValue) ")
+        
+        
+        var count = 0
         for i in array{
+            count += 1
             if i == searchValue{
-                return true
+                return (true,i)
             }
         }
-        return false
+        return (false,count)
     }
     
     

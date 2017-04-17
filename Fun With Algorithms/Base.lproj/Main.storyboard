@@ -120,6 +120,28 @@
                                     <action selector="BinarySeachBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6X-mQ-hfw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh8-p1-sKw" customClass="DesignableButton" customModule="Fun_With_Algorithms" customModuleProvider="target">
+                                <rect key="frame" x="66" y="328" width="243" height="37"/>
+                                <color key="backgroundColor" red="0.91742700338363647" green="0.77516371011734009" blue="0.55097317695617676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Linear Search">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="linearSearchBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8g7-jr-0Cc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -136,11 +158,15 @@
                             <constraint firstItem="YmV-qK-bC9" firstAttribute="width" secondItem="HpM-8v-413" secondAttribute="width" id="EMY-dK-yaN"/>
                             <constraint firstItem="yqN-ak-yTA" firstAttribute="width" secondItem="fS0-6x-mAK" secondAttribute="width" id="HVd-N8-2KU"/>
                             <constraint firstItem="YmV-qK-bC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mkg-Pc-NP0"/>
+                            <constraint firstItem="dh8-p1-sKw" firstAttribute="top" secondItem="YmV-qK-bC9" secondAttribute="bottom" constant="25" id="Mtf-HZ-h8n"/>
                             <constraint firstItem="yqN-ak-yTA" firstAttribute="height" secondItem="fS0-6x-mAK" secondAttribute="height" id="Nfr-hE-kEu"/>
+                            <constraint firstItem="dh8-p1-sKw" firstAttribute="centerX" secondItem="KOo-qv-8h2" secondAttribute="centerX" id="QQR-I1-AcZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ccj-EU-xhg" secondAttribute="bottom" id="R1Z-Ba-B9g"/>
                             <constraint firstItem="yqN-ak-yTA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZVP-f6-IF2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KOo-qv-8h2" secondAttribute="bottom" id="aZ1-e8-bLv"/>
                             <constraint firstItem="fS0-6x-mAK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dLY-a1-W1Y"/>
+                            <constraint firstItem="dh8-p1-sKw" firstAttribute="width" secondItem="YmV-qK-bC9" secondAttribute="width" id="e3K-E7-BJ3"/>
+                            <constraint firstItem="dh8-p1-sKw" firstAttribute="height" secondItem="YmV-qK-bC9" secondAttribute="height" id="fel-c6-4aq"/>
                             <constraint firstItem="fS0-6x-mAK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="gc5-u4-8We"/>
                             <constraint firstItem="HpM-8v-413" firstAttribute="top" secondItem="yqN-ak-yTA" secondAttribute="bottom" constant="25" id="ipx-J5-jnQ"/>
                             <constraint firstItem="yqN-ak-yTA" firstAttribute="top" secondItem="fS0-6x-mAK" secondAttribute="bottom" constant="25" id="j6d-DT-EiG"/>

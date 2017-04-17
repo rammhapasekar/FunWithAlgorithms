@@ -66,6 +66,31 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func linearSearchBtnClick(_ sender: Any) {
+        
+        let minValue = 7
+        let maxValue = 100
+        
+        let binarySearch = BinarySearch()
+        
+        let searchValue = Int(arc4random_uniform(UInt32(maxValue) + UInt32(minValue)))
+        
+        let inArray = generateArrayOfRandomNumberInRange(From: minValue, To: maxValue, limit: 12)
+        
+        let (result,count) =  binarySearch.linearSearch(searchValue: searchValue, array: inArray)
+        
+        if result{
+            print("Array contains \(searchValue) at index \(count) 😍 and it took \(count) iteration")
+        }
+        else{
+            print("Ugg!, Array does not contains \(searchValue) 😓 and it took \(count) iteration. Yukiiee..")
+        }
+        
+        
+    }
+    
+    
     func generateArrayOfRandomNumberInRange(From: Int, To: Int,limit: Int) -> [Int]{
         
         var array = [Int]()
