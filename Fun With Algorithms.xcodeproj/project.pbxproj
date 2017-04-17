@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3EDDB61EA5196B00EFADC2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EDDB51EA5196B00EFADC2 /* DesignableButton.swift */; };
+		3F55D2181EA29E2E00A9EE76 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55D2171EA29E2E00A9EE76 /* FizzBuzz.swift */; };
 		3F9F837F1EA1F94400456FD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F837E1EA1F94400456FD2 /* AppDelegate.swift */; };
-		3F9F83811EA1F94400456FD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F83801EA1F94400456FD2 /* ViewController.swift */; };
 		3F9F83841EA1F94400456FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F83821EA1F94400456FD2 /* Main.storyboard */; };
 		3F9F83861EA1F94400456FD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F83851EA1F94400456FD2 /* Assets.xcassets */; };
 		3F9F83891EA1F94400456FD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F83871EA1F94400456FD2 /* LaunchScreen.storyboard */; };
+		3F9F83911EA1F97C00456FD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F83901EA1F97C00456FD2 /* ViewController.swift */; };
+		3FADF9911EA4BB8C00202ED1 /* TwoDimentionalArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FADF9901EA4BB8C00202ED1 /* TwoDimentionalArray.swift */; };
+		3FADF9931EA4D12500202ED1 /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FADF9921EA4D12400202ED1 /* Factorial.swift */; };
+		3FF9EF351EA2976B00E2BD3C /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9EF341EA2976B00E2BD3C /* BinarySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F3EDDB51EA5196B00EFADC2 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		3F55D2171EA29E2E00A9EE76 /* FizzBuzz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		3F9F837B1EA1F94400456FD2 /* Fun With Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fun With Algorithms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9F837E1EA1F94400456FD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F9F83801EA1F94400456FD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F9F83831EA1F94400456FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F9F83851EA1F94400456FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9F83881EA1F94400456FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9F838A1EA1F94400456FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9F83901EA1F97C00456FD2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FADF9901EA4BB8C00202ED1 /* TwoDimentionalArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoDimentionalArray.swift; sourceTree = "<group>"; };
+		3FADF9921EA4D12400202ED1 /* Factorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
+		3FF9EF341EA2976B00E2BD3C /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3EDDB71EA51BB800EFADC2 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				3FF9EF341EA2976B00E2BD3C /* BinarySearch.swift */,
+				3FADF9921EA4D12400202ED1 /* Factorial.swift */,
+				3F55D2171EA29E2E00A9EE76 /* FizzBuzz.swift */,
+				3FADF9901EA4BB8C00202ED1 /* TwoDimentionalArray.swift */,
+			);
+			name = Algorithms;
+			sourceTree = "<group>";
+		};
+		3F3EDDB81EA51BD800EFADC2 /* DesignableClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3F3EDDB51EA5196B00EFADC2 /* DesignableButton.swift */,
+			);
+			name = DesignableClasses;
+			sourceTree = "<group>";
+		};
 		3F9F83721EA1F94400456FD2 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +83,14 @@
 		3F9F837D1EA1F94400456FD2 /* Fun With Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				3F3EDDB81EA51BD800EFADC2 /* DesignableClasses */,
+				3F3EDDB71EA51BB800EFADC2 /* Algorithms */,
+				3F9F838A1EA1F94400456FD2 /* Info.plist */,
 				3F9F837E1EA1F94400456FD2 /* AppDelegate.swift */,
-				3F9F83801EA1F94400456FD2 /* ViewController.swift */,
-				3F9F83821EA1F94400456FD2 /* Main.storyboard */,
+				3F9F83901EA1F97C00456FD2 /* ViewController.swift */,
 				3F9F83851EA1F94400456FD2 /* Assets.xcassets */,
 				3F9F83871EA1F94400456FD2 /* LaunchScreen.storyboard */,
-				3F9F838A1EA1F94400456FD2 /* Info.plist */,
+				3F9F83821EA1F94400456FD2 /* Main.storyboard */,
 			);
 			path = "Fun With Algorithms";
 			sourceTree = "<group>";
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9F83811EA1F94400456FD2 /* ViewController.swift in Sources */,
+				3F9F83911EA1F97C00456FD2 /* ViewController.swift in Sources */,
 				3F9F837F1EA1F94400456FD2 /* AppDelegate.swift in Sources */,
+				3F3EDDB61EA5196B00EFADC2 /* DesignableButton.swift in Sources */,
+				3FF9EF351EA2976B00E2BD3C /* BinarySearch.swift in Sources */,
+				3FADF9931EA4D12500202ED1 /* Factorial.swift in Sources */,
+				3F55D2181EA29E2E00A9EE76 /* FizzBuzz.swift in Sources */,
+				3FADF9911EA4BB8C00202ED1 /* TwoDimentionalArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +338,7 @@
 				3F9F838F1EA1F94400456FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

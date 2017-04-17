@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fun_With_Algorithms" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,141 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="algorithm" translatesAutoresizingMaskIntoConstraints="NO" id="ccj-EU-xhg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOo-qv-8h2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS0-6x-mAK" customClass="DesignableButton" customModule="Fun_With_Algorithms" customModuleProvider="target">
+                                <rect key="frame" x="66" y="80" width="243" height="37"/>
+                                <color key="backgroundColor" red="0.91742700338363647" green="0.77516371011734009" blue="0.55097317695617676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="KC3-Pc-xGo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Two Dimentional Array">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="twoD_array_btn_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyH-Cd-vlP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqN-ak-yTA" customClass="DesignableButton" customModule="Fun_With_Algorithms" customModuleProvider="target">
+                                <rect key="frame" x="66" y="142" width="243" height="37"/>
+                                <color key="backgroundColor" red="0.91742700338363647" green="0.77516371011734009" blue="0.55097317695617676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="FizzBuzz">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fizzBuzzBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ZS-w9-Scp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpM-8v-413" customClass="DesignableButton" customModule="Fun_With_Algorithms" customModuleProvider="target">
+                                <rect key="frame" x="66" y="204" width="243" height="37"/>
+                                <color key="backgroundColor" red="0.91742700338363647" green="0.77516371011734009" blue="0.55097317695617676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Factorial Of Number">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="factorialOfNumberBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4BD-hI-YP4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmV-qK-bC9" customClass="DesignableButton" customModule="Fun_With_Algorithms" customModuleProvider="target">
+                                <rect key="frame" x="66" y="266" width="243" height="37"/>
+                                <color key="backgroundColor" red="0.91742700338363647" green="0.77516371011734009" blue="0.55097317695617676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Binary Search">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BinarySeachBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6X-mQ-hfw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YmV-qK-bC9" firstAttribute="top" secondItem="HpM-8v-413" secondAttribute="bottom" constant="25" id="0Wv-qA-NkU"/>
+                            <constraint firstItem="HpM-8v-413" firstAttribute="height" secondItem="yqN-ak-yTA" secondAttribute="height" id="2Ca-Kj-vry"/>
+                            <constraint firstItem="ccj-EU-xhg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2EE-5D-oSV"/>
+                            <constraint firstItem="HpM-8v-413" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4eo-He-5Ml"/>
+                            <constraint firstItem="KOo-qv-8h2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="73i-N8-O1u"/>
+                            <constraint firstItem="HpM-8v-413" firstAttribute="width" secondItem="yqN-ak-yTA" secondAttribute="width" id="7hK-xp-3UQ"/>
+                            <constraint firstItem="KOo-qv-8h2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="86o-oX-QsL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fS0-6x-mAK" secondAttribute="trailing" constant="50" id="A0G-KI-p6f"/>
+                            <constraint firstAttribute="trailing" secondItem="ccj-EU-xhg" secondAttribute="trailing" id="BPO-q4-X2R"/>
+                            <constraint firstAttribute="trailing" secondItem="KOo-qv-8h2" secondAttribute="trailing" id="CMO-Ms-fgw"/>
+                            <constraint firstItem="YmV-qK-bC9" firstAttribute="width" secondItem="HpM-8v-413" secondAttribute="width" id="EMY-dK-yaN"/>
+                            <constraint firstItem="yqN-ak-yTA" firstAttribute="width" secondItem="fS0-6x-mAK" secondAttribute="width" id="HVd-N8-2KU"/>
+                            <constraint firstItem="YmV-qK-bC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mkg-Pc-NP0"/>
+                            <constraint firstItem="yqN-ak-yTA" firstAttribute="height" secondItem="fS0-6x-mAK" secondAttribute="height" id="Nfr-hE-kEu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ccj-EU-xhg" secondAttribute="bottom" id="R1Z-Ba-B9g"/>
+                            <constraint firstItem="yqN-ak-yTA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZVP-f6-IF2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KOo-qv-8h2" secondAttribute="bottom" id="aZ1-e8-bLv"/>
+                            <constraint firstItem="fS0-6x-mAK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dLY-a1-W1Y"/>
+                            <constraint firstItem="fS0-6x-mAK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="gc5-u4-8We"/>
+                            <constraint firstItem="HpM-8v-413" firstAttribute="top" secondItem="yqN-ak-yTA" secondAttribute="bottom" constant="25" id="ipx-J5-jnQ"/>
+                            <constraint firstItem="yqN-ak-yTA" firstAttribute="top" secondItem="fS0-6x-mAK" secondAttribute="bottom" constant="25" id="j6d-DT-EiG"/>
+                            <constraint firstItem="YmV-qK-bC9" firstAttribute="height" secondItem="HpM-8v-413" secondAttribute="height" id="nhg-Sj-Nik"/>
+                            <constraint firstItem="fS0-6x-mAK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="80" id="ruE-eb-SZQ"/>
+                            <constraint firstItem="ccj-EU-xhg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tko-cX-hut"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="115.59220389805098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="algorithm" width="3000" height="3000"/>
+    </resources>
 </document>
